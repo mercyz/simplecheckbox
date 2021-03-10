@@ -1,6 +1,7 @@
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/codepally/'
-      : '/'
+    // publicPath: process.env.NODE_ENV === 'production'
+    //   ? '/simplecheckbox/'
+    //   : '/'
+    publicPath: "simplecheckbox"
   }
