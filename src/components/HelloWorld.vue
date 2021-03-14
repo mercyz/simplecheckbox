@@ -4,7 +4,7 @@
         <input class="checkbox" type="checkbox" :value="username[0]"  v-model="selected"> 
         <label class="username" for="{username[0]}">{{username[1]}}</label>
       </div>
-      <p class="flex">{{selected.join(",")}}</p>
+      <pre class="flex">{{selected.join(",")}}</pre>
   </div>
 </template>
 <script>
