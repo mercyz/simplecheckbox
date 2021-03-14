@@ -1,8 +1,8 @@
 <template>
   <div class="container">
       <div class="card"  @click="checkbox($event)" v-for="(username, index) in codepally" :key="index">
-        <input class="checkbox" type="checkbox" :value="username[0]"  v-model="selected"> 
-        <label class="username" for="{username[0]}">{{username[1]}}</label>
+        <input class="checkbox" @click="checkbox($event)" type="checkbox" :value="username[0]"  v-model="selected"> 
+        <label class="username" @click="checkbox($event)" for="{username[0]}">{{username[1]}}</label>
       </div>
       <p class="flex">{{selected.join(",")}}</p>
   </div>
